@@ -649,7 +649,7 @@ body::-webkit-scrollbar {
 
 .currentPage {
   background: #ffffff;
-  font-family: YakuHanMP, 'Noto Serif JP', YuMincho, 'Hiragino Mincho ProN', 'Yu Mincho', 'MS PMincho', serif;
+  /* font-family: YakuHanMP, 'Noto Serif JP', YuMincho, 'Hiragino Mincho ProN', 'Yu Mincho', 'MS PMincho', serif; */
   -webkit-font-feature-settings: 'palt';
           font-feature-settings: 'palt';
   -webkit-text-size-adjust: 100%;
@@ -3012,7 +3012,7 @@ body[data-sai-easing='ease-in-out-quart'] [data-sai] {
 
 @media screen and (min-width: 768px) {
   .contentMenu-dropdown__head .statusIcon:before {
-    /* content: '＞'; */
+    content: '';
     display: block;
     font-size: 14px;
     -webkit-transform: scale(0.6, 1);
@@ -3112,14 +3112,14 @@ body[data-sai-easing='ease-in-out-quart'] [data-sai] {
 
 @media screen and (min-width: 768px) {
   .contentMenu-dropdown__body {
-    /* padding: 0 5px 18px; */
+    padding: 0 5px 18px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .contentMenu-dropdown__body {
     /* background-color: #e9e5de; */
-    /* max-height: 0; */
+    max-height: 0;
     line-height: 1.8;
   }
 }
@@ -6677,8 +6677,8 @@ body[data-sai-easing='ease-in-out-quart'] [data-sai] {
 /* DEVELOPMENT */
 
 .mansionSymbol-bukkenLogo__bk{
-  height: 17,67px;
-  width: auto;
+  /* height: 17.67px; */
+  width: 153px;
 }
 
 .mansionSymbol-bukkenLogo__link{
@@ -6700,8 +6700,7 @@ body[data-sai-easing='ease-in-out-quart'] [data-sai] {
   background-repeat: no-repeat;
 }
 .contentMenu-inner {
-  margin-left: 33%;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 .contentMenu-pageList__item{
   border-bottom: 1px solid #bcbcbc;
@@ -6808,16 +6807,7 @@ body[data-sai-easing='ease-in-out-quart'] [data-sai] {
 .contentMenu-external{
   margin-top: 80px;
 }
-@media screen and (max-width: 1450px){
-  .contentMenu-inner {
-    margin-left: 25%;
-  }
-}
-@media screen and (max-width: 1366px){
-  .contentMenu-inner {
-    margin-left: 15%;
-  }
-}
+
 @media screen and (max-width: 1280px){
   .contentMenu-inner{
     margin: 0 auto;
@@ -6846,15 +6836,16 @@ body[data-sai-easing='ease-in-out-quart'] [data-sai] {
   }
 }
 @media screen and (max-width: 520px){
-  .contentMenu-pageList{
+  /* .contentMenu-pageList{
     display: flex;
     flex-direction: column;
     
-  }
+  } */
   .contentMenu-pageList__item{
-    width: 100%;
+    width: 48.5%;
   }
   .contentMenu-pageList__link {
+    line-height: 1.5;
     padding: 10px 20px;
   }
   .contentMenu-pageList__link:after{
@@ -6866,9 +6857,19 @@ body[data-sai-easing='ease-in-out-quart'] [data-sai] {
   }
 }
 @media screen and (max-width: 375px){
+  .mansionSymbol-bukkenLogo__bk {
+    width: 153px;
+  }
   .mansionSymbol-bukkenLogo__link {
     display: flex;
     flex-direction: column;
     align-items: start;
+  }
+  .contentMenu-pageList__link:after {
+    width: 10px;
+    height: 10px;
+  }
+  .contentMenu-dropdown__link{
+    line-height: 1.25;
   }
 }

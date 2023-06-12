@@ -1,0 +1,41 @@
+tai 2 cai 0609
+
+hình center
+
+ 
+text giả cần thay đổi:
+   textflipul{ rotateY 180 deg; text-aling right}
+
+
+video: cat hinh cho link href
+
+2023.00.00: cho the a(biet la co link)
+
+6 cuc: 
+
+
+---sp
+
+767 tro xuong
+
+sua lai fot
+
+2023: auto 5s, slick: un-slick
+
+1064 tro ve trc: pc
+
+---cau truc folder
+
+
+js -> function.js
+1063 - 768: 
+
+768 mat hinh, coi bang 769
+
+media 767
+
+test pc, 1064
+
+blockOuter = box__container
+blockHead = box__show
+blockHide = box__hide

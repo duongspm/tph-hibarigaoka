@@ -13,8 +13,10 @@
     <link rel="apple-touch-icon" href="/mecsumai/img/common/webclip.png">
 
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&Cormorant+Infant:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&Cormorant+Infant:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    
     <!-- title, description -->
     
     
@@ -35,7 +37,9 @@
     <!-- assets -->
     <link rel="stylesheet" href="common/css/common.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="common/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="common/js/lib.js"></script>
+    <script src="js/function.js"></script>
 
 
 </head>
@@ -150,7 +154,7 @@
                                 <div class="contentMenu-dropdown">
                                     <div class="contentMenu-dropdown__head js-contentMenu-accordion">
                                         <a href="brand/" class="contentMenu-dropdown__link">一生ものに、住む。ザ・パークハウス</a>
-                                        <!-- <span class="statusIcon"></span> -->
+                                        <span class="statusIcon"></span>
                                     </div>
                                     <div class="contentMenu-dropdown__body">
                                         <a href="brand/" class="contentMenu-dropdown__txt">住まいの品質を創造する<br class="only-pc">「5つのアイズ」、購入後サポート、<br class="only-pc">分譲実績など。<br class="only-sp">ブランドページはこちら。</a>
@@ -439,7 +443,7 @@
         </div>
         <main class="main">
             <div class="container">
-                <div id="mainVisual" class="mainVisual">
+                <!-- <div id="mainVisual" class="mainVisual">
                     <picture class="mainVisual__picture">
                         <source media="(min-width: 768px)" srcset="imgs/pc/img-main-pattern01.jpg">
                         <img src="imgs/sp/img-main-pattern01.jpg" alt="" class="mainVisual__image">
@@ -728,21 +732,367 @@
                 </div>
 
                 <div class="contentArea">
-                    <!-- 実装時こちらのダミーエリアは削除してください -->
+                    実装時こちらのダミーエリアは削除してください
                     <div class="dummyArea">
                         <div class="dummyArea__content">
                             <div class="dummyArea__heading">以下コンテンツエリア</div>
                             <p class="dummyArea__explanation">デザイン・レイアウトは自由に設計可</p>
                         </div>
                     </div>
-                    <!-- / 実装時こちらのダミーエリアは削除してください -->
+                    / 実装時こちらのダミーエリアは削除してください
+                </div> -->
+                <div class="slider">
+                    <div class="slider-pc">
+                        <img src="/imgs/img-slider.jpg" alt="Slider PC">
+                    </div>
+                    <div class="slider-sp">
+                        <img src="/imgs/img-slider_sp.jpg" alt="Slider SP">
+                    </div>
+                    <div class="slider__title">
+                        <p>外観完成予想CG</p>
+                    </div>
+                </div>
+                <div class="intro">
+                    <div class="intro__box">
+                        <div class="intro__img">
+                            <img src="imgs/img-intro.png" alt="Image Intro">
+                        </div>
+                        <div class="intro__desc">
+                            <p class="text__Flip--center">第一種中高層住居専用見晴らす丘そのポジションを最大限に活かす未来す駅前再開
+                            </p>
+                            <p class="text__Flip--center">発計画が進む、成熟した時が流れる多様な</p>
+                        </div>
+                        <div class="intro__title">
+                            <p>あらたな暮らしは、駅前で結実する。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="position">
+                        <div class="box__wrapper">
+                            <div class="box__container">
+                                <p class="box__title">
+                                    急行停車駅徒歩 <span class="box__title--number">2</span> 分、
+                                    <br>
+                                    ひばりが丘の中心で、
+                                    <br>
+                                    多彩な価値を <span class="box__title--txt"> 結</span>ぶ。
+                                </p>
+                                <div class="box__show">
+                                    <div class="box__img">
+                                        <div class="img-title">
+                                            <img src="imgs/position.jpg" alt="Position">
+                                            <a href="#">○〇〇○〇〇○〇〇○〇〇</a>
+                                        </div>
+                                    </div>
+                                    <div class="box__content box__content--position">
+                                        <h3 class="box__content__heading">Position</h3>
+                                        <h4 class="box__content__subtitle">
+                                            急行停車駅徒歩2分の価値
+                                        </h4>
+                                        <p class="box__content__title">
+                                            都市機能が集積する、駅前ロータリー目の前。
+                                        </p>
+                                        <p class="box__content__desc text__Flip--right">
+                                            第一種中高層住居専用地域を見晴らす丘。そのポジションを最大限に活かす見晴平方面の下り坂ルー第一種中高層住居専用ジションを最大限に活かす見晴平方面の下り坂ルー
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="box__hide box__hide--position" id="box-hide">
+                                    <div class="position__boxhide">
+                                        <div class="position__boxhide__left">
+                                            <div class="position__boxhide__img">
+                                                <img src="imgs/img-position01.png" alt="Position Image">
+                                                <a href="#" class="position__boxhide__imgtitle">
+                                                    ○〇〇○〇〇○〇〇○〇〇
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="position__boxhide__right">
+                                            <p class="text__Flip--right">第一種中高層住居専用地域を見晴らす <br> 丘活かす見晴平方面の下面の下り坂ルー
+                                            </p>
+                                            <div class="position__btn--big">
+                                                <div class="box__btn box__btn--bigblack">
+                                                    <div class="box__btnleft">
+                                                        <p>Position</p>
+                                                        <span>急行停車駅徒歩2分の価値</span>
+                                                    </div>
+                                                    <div class="box__btnright">
+                                                        <p>View more</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="position__btn--small">
+                                                <div class=" box__btn box__btn--small">
+                                                    <div class="box__btnleft">
+                                                        <p>access</p>
+                                                        <span>都心直通・池袋まで急行2駅のアクセス
+                                                        </span>
+                                                    </div>
+                                                    <div class="box__btnright">
+                                                        <p>View more</p>
+                                                    </div>
+                                                </div>
+    
+                                                <div class=" box__btn box__btn--small">
+                                                    <div class="box__btnleft">
+                                                        <p>Location</p>
+                                                        <span>充実の駅前利便と身近な自然環境</span>
+                                                    </div>
+                                                    <div class="box__btnright">
+                                                        <p>View more</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box__more box__more--position" id="box-more">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="design">
+                        <div class="box__wrapper">
+                            <div class="box__container">
+                                <p class="box__title">
+                                    都市の洗練と
+                                    <br>
+                                    街に馴染む温もり。
+                                    <br>
+                                    象徴の建築美を<span class="box__title--txt">結</span>ぶ。
+                                </p>
+                                <div class="box__show">
+                                    <div class="box__content">
+                                        <h3 class="box__content__heading">Design</h3>
+                                        <h4 class="box__content__subtitle">
+                                            誇らしさを抱く独創的な建築
+                                        </h4>
+                                        <p class="box__content__title">
+                                            存在感を放つ邸宅、この地に相応しい風合い。
+                                        </p>
+                                        <p class="box__content__desc text__Flip--right">
+                                            第一種中高層住居専用地域を見晴らす丘。そのポジションを最大限に活かす見晴平方面の下り坂ルー第一種中高層住居専用ジションを最大限に活かす見晴平方面の下り坂ルー
+                                        </p>
+                                    </div>
+                                    <div class="box__img">
+                                        <div class="img-title">
+                                            <img src="./imgs/design-main.jpg" alt="Design Image">
+                                            <a href="#">○〇〇○〇〇○〇〇○〇〇</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box__hide box__hide--design">
+                                    <div class="design__boxhide">
+                                        <div class="design__boxhide__left">
+                                            <div class="design__boxhide__leftimg">
+                                                <div class="img-title">
+                                                    <img src="imgs/design-img01.jpg" alt="Design Image 01">
+                                                    <a>○〇〇○〇〇○〇〇○〇〇</a>
+                                                </div>
+                                                <p class="text__Flip--right design__boxhide__lefttitle">第一種中高層住居専用地域を見晴らす丘活かす見晴平方面の下面の下り坂ルー</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="design__boxhide__right">
+                                            <div class="design__boxhide__right-top">
+                                                <p class="text__Flip--right">第一種中高層住居専用地域を見晴らす丘活かす見晴平方面の下面の下り坂ルー</p>
+                                                <div class="design__boxhide__rightimg">
+                                                    <div class="img-title">
+                                                        <img src="imgs/img-design02.png" alt="Design Image 02">
+                                                        <a>マテリアルイメージ</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="design__btn--big">
+                                                <div class="box__btn box__btn--bigblack">
+                                                    <div class="box__btnleft">
+                                                        <p>Design</p>
+                                                        <span>誇らしさを抱く独創的な建築
+                                                        </span>
+                                                    </div>
+                                                    <div class="box__btnright">
+                                                        <p>View more</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="design__btn--small">
+                                                <div class=" box__btn box__btn--small">
+                                                    <div class="box__btnleft">
+                                                        <p>ZEH M-oriented</p>
+                                                        <span>充実の駅前利便と身近な自然環境
+                                                        </span>
+                                                    </div>
+                                                    <div class="box__btnright">
+                                                        <p>View more</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box__more box__more--design" id="box-more">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="plan">
+                        <div class="box__wrapper">
+                            <div class="box__container">
+                                <p class="box__title">
+                                    都市の洗練と
+                                    <br>
+                                    街に馴染む温もり。
+                                    <br>
+                                    象徴の建築美を<span class="box__title--txt">結</span>ぶ。
+                                    <!-- 日常を軽快に愉しみ
+                                    穏やかに寛ぐ、
+                                    多彩な暮らしを結ぶ。 -->
+                                </p>
+                                <div class="box__show">
+                                    <div class="box__img">
+                                        <div class="img-title">
+                                            <img src="imgs/plan-main.jpg" alt="Plan Image">
+                                            <a href="">image</a>
+                                        </div>
+                                    </div>
+                                    <div class="box__content box__content--plan">
+                                        <h3 class="box__content__heading">Plan</h3>
+                                        <h4 class="box__content__subtitle">
+                                            駅前に住むからこその暮らし方
+                                        </h4>
+                                        <p class="box__content__title">
+                                            多彩なプラン〇〇〇〇〇〇〇〇
+                                        </p>
+                                        <p class="box__content__desc text__Flip--right">
+                                            第一種中高層住居専用地域を見晴らす丘。そのポジションを最大限に活かす見晴平方面の下り坂ルー第一種中高層住居専用ジションを最大限に活かす見晴平方面の下り坂ルー
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="box__hide box__hide--plan">
+                                    <div class="plan__boxhide">
+                                        <div class="plan__boxhide__list">
+                                            <div class="plan__boxhide__item">
+                                                <img src="imgs/plan-img01.jpg" alt="Plan Image 01">
+                                            </div>
+                                            <div class="plan__boxhide__item">
+                                                <img src="imgs/plan-img02.jpg" alt="Plan Image 02">
+                                            </div>
+                                            <div class="plan__boxhide__item">
+                                                <img src="imgs/plan-img03.jpg" alt="Plan Image 03">
+                                            </div>
+                                        </div>
+                                        <p class="plan__boxhide__title text__Flip--right">第一種中高層住居専用地域を見晴らす丘活かす見晴平方面の<br class="only-pc">下面の下り坂ルー</p>
+                                        <div class="plan__btn--big">
+                                            <div class="box__btn box__btn--bigblack">
+                                                <div class="box__btnleft">
+                                                    <p>Plan</p>
+                                                    <span>駅前に住むからこその暮らし方
+                                                    </span>
+                                                </div>
+                                                <div class="box__btnright">
+                                                    <p>View more</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box__more box__more--plan" id="box-more">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <a href="#">
+                        <img src="imgs/video.jpg" alt="Video">
+                    </a>
+                </div>
+
+                <div class="info">
+                    <h3 class="info__title">
+                        Information
+                    </h3>
+                    <h2 class="info__heading">
+                        エントリー受付開始
+                    </h2>
+                    <div class="info__list">
+                        <div class="info__item">
+                            <p class="info__day">
+                                2023.00.00
+                            </p>
+                            <a href="#" class="info__content">
+                                物件エントリー受付開始しました。物件エントリー受付開始しました。物件エントリー受付開始しました。物件エントリー受付開始しました。
+                            </a>
+                        </div>
+                        <div class="info__item">
+                            <p class="info__day">
+                                2023.00.00
+                            </p>
+                            <a href="#" class="info__content">
+                                物件エントリー受付開始しました。物件エントリー受付開始しました。物件エントリー受付開始しました。物件エントリー受付開始しました。
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menubottom">
+                    <div class="menubottom__list">
+                        <a href="#" class="menubottom__item scale-img">
+                            <img src="imgs/menubottom-position.jpg" alt="Position">
+                            <p>Position</p>
+                        </a>
+                        <a href="#" class="menubottom__item scale-img">
+                            <img src="imgs/menubottom-design.jpg" alt="design">
+                            <p>design</p>
+                        </a>
+                        <a href="#" class="menubottom__item scale-img">
+                            <img src="imgs/menubottom-plan.jpg" alt="plan">
+                            <p>plan</p>
+                        </a>
+                        <a href="#" class="menubottom__item scale-img">
+                            <img src="imgs/menubottom-location.jpg" alt="location">
+                            <p>location</p>
+                        </a>
+                        <a href="#" class="menubottom__item scale-img">
+                            <img src="imgs/menubottom-access.jpg" alt="access">
+                            <p>access</p>
+                        </a>
+                        <a href="#" class="menubottom__item scale-img">
+                            <img src="imgs/menubottom-zeh.jpg" alt="zeh M-oriented">
+                            <p>zeh M-oriented</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </main>
 
         <div class="bottomArea">
             <div class="bottomArea__inner">
-                <p class="caption">※注釈が入ります。注釈が入ります。注釈が入ります。注釈が入ります。注釈が入ります。注釈が入ります。注釈が入ります。注釈が入ります。注釈が入ります。注釈が入ります。注釈が入ります。注釈が入ります。※注釈が入ります。注釈が入ります。注釈が入ります。注釈が入ります。注釈が入ります。注釈が入ります。注釈が入ります。注釈が入ります。注釈が入ります。注釈が入ります。注釈が入ります。注釈が入ります。</p>
+                <p class="caption text__Flip--right">
+                    ※掲載の外観完成予想CGは、2021年9月に撮影した現地付近（現地より約80m）の写真と計画段階の図面を基に描き起こした完成予想CGを合成したもので、実際とは異なります。雨樋、エアコン室外機、給湯器、TVアンテナ等再現されていない設備機器等がございます。植栽は、特定の季節やご入居時の状態を想定して描かれたものではありません。
+                            <br>
+                            
+                            ※掲載のエントランス完成予想CGは、計画段階の図面を基に描き起こした完成予想CGを合成したもので、実際とは異なります。雨樋、エアコン室外機、給湯器、TVアンテナ等再現されていない設備機器等がございます。植栽は、特定の季節やご入居時の状態を想定して描かれたものではありません。
+                            <br>
+                            
+                            ※掲載の施設、環境等の写真(image photo除く)は2021年8月に撮影されたものです。
+                            <br>
+                            
+                            ※表示距離は現地からの地図上の概算です。徒歩分数は80m=1分として算出し、端数を切り上げております。
+                            <br>
+                            
+                            ※掲載の情報は2021年10月時点のものになります。
+                </p>
                 <div class="bottomCV-btn">
                     <a href="javascript:void(0);" class="bottomCV-btn__link js-cvBnr-button">
                         エントリー / お問い合わせ
