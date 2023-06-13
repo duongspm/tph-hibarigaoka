@@ -13,8 +13,6 @@
     <link rel="apple-touch-icon" href="/mecsumai/img/common/webclip.png">
 
     <!-- font -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&Cormorant+Infant:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
     
     <!-- title, description -->
@@ -36,12 +34,14 @@
     
     <!-- assets -->
     <link rel="stylesheet" href="common/css/common.css" />
+    <script src="common/js/lib.js"></script>
     <link rel="stylesheet" href="common/css/slick.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="common/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="common/js/slick.js"></script>
+    <script src="js/jquery.inview.js"></script>
     <script src="js/function.js"></script>
-    <script src="common/js/lib.js"></script>
+
 
 
 </head>
@@ -445,310 +445,12 @@
         </div>
         <main class="main">
             <div class="container">
-                <!-- <div id="mainVisual" class="mainVisual">
-                    <picture class="mainVisual__picture">
-                        <source media="(min-width: 768px)" srcset="imgs/pc/img-main-pattern01.jpg">
-                        <img src="imgs/sp/img-main-pattern01.jpg" alt="" class="mainVisual__image">
-                    </picture>
-                    <p class="mainVisual__capIn capIn">キャプションが入ります</p>
-                    <div class="topCV is-new is-visible">
-                        <button class="topCV__button js-cvBnr-button" type="button">
-                            <div class="topCV-title">
-                                <span class="topCV-title__txt">エントリー</span>
-                                <span class="topCV-title__txt">お問い合わせ</span>
-                            </div>
-                            <img src="common/imgs/logo-cv-white.svg" alt="" class="topCV__logo">
-                        </button>
-                    </div>
-                </div>
-                <div class="contentGuide">
-                    <div class="guidanceBlock" data-sai="target">
-                        <div class="guidanceVisual">
-                            <div class="guidanceVisual__inner">
-                                <img src="imgs/pc/img-guide-01@1.5x.jpg" class="guidanceVisual__heroImg" alt="">
-                                <p class="guidanceVisual__capIn capIn" data-color="sdw-wh">キャプション</p>
-                            </div>
-                            <div class="guidanceVisual__bg">
-                                <img src="imgs/pc/img-guide-01@1.5x.jpg" class="guidanceVisual__bgImg" alt="">
-                            </div>
-                        </div>
-                        <div class="guidanceBlock__introduction">
-                            <div class="introSection">
-                                <h2 class="introSection__heading" data-sai="fade-up">キャッチコピーキャッチコピー<br>キャッチコピーキャッチコピー</h2>
-                                <p class="introSection__txt" data-sai="fade-up">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                <a href="{$dummy_page$}" class="btn-view" data-sai="fade-up">詳細はこちら</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="guidanceBlock" data-sai="target">
-                        <div class="guidanceVisual">
-                            <div class="guidanceVisual__inner">
-                                <img src="imgs/pc/img-guide-02@1.5x.jpg" class="guidanceVisual__heroImg" alt="">
-                                <p class="guidanceVisual__capIn capIn" data-color="sdw-wh">キャプション</p>
-                            </div>
-                            <div class="guidanceVisual__bg">
-                                <img src="imgs/pc/img-guide-02@1.5x.jpg" class="guidanceVisual__bgImg" alt="">
-                            </div>
-                        </div>
-                        <div class="guidanceBlock__introduction">
-                            <div class="introSection">
-                                <h2 class="introSection__heading" data-sai="fade-up">キャッチコピーキャッチコピー<br>キャッチコピーキャッチコピー</h2>
-                                <p class="introSection__txt" data-sai="fade-up">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                <a href="{$dummy_page$}" class="btn-view" data-sai="fade-up">詳細はこちら</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="guidanceBlock" data-sai="target">
-                        <div class="guidanceVisual">
-                            <div class="guidanceVisual__inner">
-                                <img src="imgs/pc/img-guide-03@1.5x.jpg" class="guidanceVisual__heroImg" alt="">
-                                <p class="guidanceVisual__capIn capIn" data-color="sdw-wh">キャプション</p>
-                            </div>
-                            <div class="guidanceVisual__bg">
-                                <img src="imgs/pc/img-guide-03@1.5x.jpg" class="guidanceVisual__bgImg" alt="">
-                            </div>
-                        </div>
-                        <div class="guidanceBlock__introduction">
-                            <div class="introSection">
-                                <h2 class="introSection__heading" data-sai="fade-up">キャッチコピーキャッチコピー<br>キャッチコピーキャッチコピー</h2>
-                                <p class="introSection__txt" data-sai="fade-up">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                <a href="{$dummy_page$}" class="btn-view" data-sai="fade-up">詳細はこちら</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="guideArea">
-                    <div class="guideCard" data-sai="target">
-                        <div class="guideCard__head js-top-accordion">
-                            <img src="imgs/sp/img-guide-01.jpg" class="guideCard__heroImg" alt="">
-                            <p class="guideCard__capIn capIn">キャプション</p>
-                            <div class="guideCard__introduction">
-                                <div class="introSection">
-                                    <h2 class="introSection__heading">
-                                        キャッチコピーキャッチコピー<br>キャッチコピーキャッチコピー
-                                    </h2>
-                                    <p class="introSection__txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="guideCard__body guideCard__body--00">
-                            <div class="guideCard__inner">
-                                <div class="detailSection">
-                                    <div class="photo" data-sai="fade-up">
-                                        <img src="imgs/img-usp-dummy.jpg" class="photo__hero" alt="">
-                                        <p class="photo__capIn capIn">キャプションが入ります</p>
-                                    </div>
-                                    <h2 class="detailSection__heading" data-sai="fade-up">見出し見出し見出し見出し見出し見出し<br>見出し見出し見出し見出し見出し見出し</h2>
-                                    <p class="detailSection__txt" data-sai="fade-up">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                </div>
-                                <a href="{$dummy_page$}" class="btn-view" data-sai="fade-up">デザインページで詳細を見る</a>
-                            </div>
-                        </div>
-                        <div class="guideCard__close js-top-accordion-close">
-                            <svg class="arrowSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31px" height="19px" viewBox="0,0,31,19">
-                                <path class="arrowSVG__path" fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M15.663,16.293 L2.065,0.308 L0.505,0.788 L15.663,18.549 L15.743,18.549 L30.900,0.788 L29.300,0.308 L15.743,16.293 L15.663,16.293 Z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="guideCard" data-sai="target">
-                        <div class="guideCard__head js-top-accordion">
-                            <img src="imgs/sp/img-guide-02.jpg" class="guideCard__heroImg" alt="">
-                            <p class="guideCard__capIn capIn">キャプション</p>
-                            <div class="guideCard__introduction">
-                                <div class="introSection">
-                                    <h2 class="introSection__heading">
-                                        キャッチコピーキャッチコピー<br>キャッチコピーキャッチコピー
-                                    </h2>
-                                    <p class="introSection__txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="guideCard__body guideCard__body--00">
-                            <div class="guideCard__inner">
-                                <div class="detailSection">
-                                    <div class="photo" data-sai="fade-up">
-                                        <img src="imgs/img-usp-dummy.jpg" class="photo__hero" alt="">
-                                        <p class="photo__capIn capIn">キャプションが入ります</p>
-                                    </div>
-                                    <h2 class="detailSection__heading" data-sai="fade-up">見出し見出し見出し見出し見出し見出し<br>見出し見出し見出し見出し見出し見出し</h2>
-                                    <p class="detailSection__txt" data-sai="fade-up">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                </div>
-                                <a href="{$dummy_page$}" class="btn-view" data-sai="fade-up">ダミーページで詳細を見る</a>
-                            </div>
-                        </div>
-                        <div class="guideCard__close js-top-accordion-close">
-                            <svg class="arrowSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31px" height="19px" viewBox="0,0,31,19">
-                                <path class="arrowSVG__path" fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M15.663,16.293 L2.065,0.308 L0.505,0.788 L15.663,18.549 L15.743,18.549 L30.900,0.788 L29.300,0.308 L15.743,16.293 L15.663,16.293 Z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="guideCard" data-sai="target">
-                        <div class="guideCard__head js-top-accordion">
-                            <img src="imgs/sp/img-guide-03.jpg" class="guideCard__heroImg" alt="">
-                            <p class="guideCard__capIn capIn">キャプション</p>
-                            <div class="guideCard__introduction">
-                                <div class="introSection">
-                                    <h2 class="introSection__heading">
-                                        キャッチコピーキャッチコピー<br>キャッチコピーキャッチコピー
-                                    </h2>
-                                    <p class="introSection__txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="guideCard__body guideCard__body--00">
-                            <div class="guideCard__inner">
-                                <div class="detailSection">
-                                    <div class="photo" data-sai="fade-up">
-                                        <img src="imgs/img-usp-dummy.jpg" class="photo__hero" alt="">
-                                        <p class="photo__capIn capIn">キャプションが入ります</p>
-                                    </div>
-                                    <h2 class="detailSection__heading" data-sai="fade-up">見出し見出し見出し見出し見出し見出し<br>見出し見出し見出し見出し見出し見出し</h2>
-                                    <p class="detailSection__txt" data-sai="fade-up">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                </div>
-                                <a href="{$dummy_page$}" class="btn-view" data-sai="fade-up">ダミーページで詳細を見る</a>
-                            </div>
-                        </div>
-                        <div class="guideCard__close js-top-accordion-close">
-                            <svg class="arrowSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31px" height="19px" viewBox="0,0,31,19">
-                                <path class="arrowSVG__path" fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M15.663,16.293 L2.065,0.308 L0.505,0.788 L15.663,18.549 L15.743,18.549 L30.900,0.788 L29.300,0.308 L15.743,16.293 L15.663,16.293 Z" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="news">
-                    <div class="news__heading js-info-menu">
-                        <span class="en">Information</span>
-                        <span class="jp">一覧</span>
-                    </div>
-                    <div class="news__inner">
-                        <div id="newsGroup" class="newsGroup">
-                            <div class="noticeCard">
-                                <a href="javascript:void(0);" class="noticeCard__link js-info-menu">
-                                    <dl class="newsDetail">
-                                        <dt class="newsDetail__term">21.2.10</dt>
-                                        <dd class="newsDetail__desc">建物内モデルルーム公開中[完全予約制]ダミーテキストダミーテキスト</dd>
-                                    </dl>
-                                    <div class="statusIcon"></div>
-                                </a>
-                                <div class="noticeCard__body">
-                                    <div class="noticeCard__inner">
-                                        <p class="txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                        <a href="javascript:void(0);" class="btn-view js-info-modal">View Details</a>
-                                        <div class="noticeModal">
-                                            <div class="modalContent">
-                                                <div class="modalContent__close js-info-modal-close"></div>
-                                                <div class="modalContent__inner">
-                                                    <div class="registration">
-                                                        <div class="registration__title">建物内モデルルーム 公開中<br>[完全予約制]</div>
-                                                        <dl class="registrationDetail">
-                                                            <dt class="registrationDetail__term">■受付期間／</dt>
-                                                            <dd class="registrationDetail__desc">2021年00月00日(土)10：00～<br>000月00日(日)15：00</dd>
-                                                        </dl>
-                                                        <dl class="registrationDetail">
-                                                            <dt class="registrationDetail__term">■抽選日時／</dt>
-                                                            <dd class="registrationDetail__desc">2021年00月00日(日)16：00より</dd>
-                                                        </dl>
-                                                        <dl class="registrationDetail">
-                                                            <dt class="registrationDetail__term">■登録受付・抽選会場／</dt>
-                                                            <dd class="registrationDetail__desc">ザ・パークハウス ◯◯◯</dd>
-                                                        </dl>
-                                                        <p class="registration__txt">《登録時にお持ちいただくもの》</p>
-                                                        <ul class="registrationList registrationList--necessary">
-                                                            <li class="registrationList__item">お認印</li>
-                                                            <li class="registrationList__item">ご本人様確認資料(運転免許証等)</li>
-                                                            <li class="registrationList__item">収入証明書<br>源泉徴収票(写)直近1年分、<br>または確定申告書(写)直近3年分</li>
-                                                            <li class="registrationList__item">健康保険証</li>
-                                                        </ul>
-                                                        <p class="registration__txt">ご登録にあたっては以下の条件を満たしている方のみ登録可能です。</p>
-                                                        <ul class="registrationList registrationList--condition">
-                                                            <li class="registrationList__item">登録されるご本人が来場済み。<br>また、本人確認書類(運転免許証等)提出済み。</li>
-                                                            <li class="registrationList__item">ご資金計画確定済み。</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="noticeModal__bg js-info-modal-close"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="noticeCard">
-                                <a href="javascript:void(0);" class="noticeCard__link js-info-menu">
-                                    <dl class="newsDetail">
-                                        <dt class="newsDetail__term">21.2.10</dt>
-                                        <dd class="newsDetail__desc">建物内モデルルーム公開中[完全予約制]ダミーテキストダミーテキスト</dd>
-                                    </dl>
-                                    <div class="statusIcon"></div>
-                                </a>
-                                <div class="noticeCard__body">
-                                    <div class="noticeCard__inner">
-                                        <p class="txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="noticeCard">
-                                <a href="javascript:void(0);" class="noticeCard__link js-info-menu">
-                                    <dl class="newsDetail">
-                                        <dt class="newsDetail__term">21.2.10</dt>
-                                        <dd class="newsDetail__desc">建物内モデルルーム公開中[完全予約制]ダミーテキストダミーテキスト</dd>
-                                    </dl>
-                                    <div class="statusIcon"></div>
-                                </a>
-                                <div class="noticeCard__body">
-                                    <div class="noticeCard__inner">
-                                        <p class="txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="infoMenu">
-                    <div class="infoMenu__inner">
-                        <div class="infoMenu__back js-info-close"></div>
-                        <div class="infoMenu__heading">
-                            <span class="en">Information</span>
-                            <span class="jp">お知らせ一覧</span>
-                        </div>
-                        <div id="infoGroup" class="infoGroup"></div>
-                    </div>
-                </div>
-                <div class="campaign">
-                    <div class="campaign__heading js-campaign-menu">
-                        <span class="en">Event・Campaign</span>
-                    </div>
-                    <div class="campaign__inner">
-                        <div class="campaignGroup">
-                            <div class="campaignCard">
-                                <a href="https://tph-pr.mecsumai.com/" target="_blank" class="campaignCard__link">
-                                    <img src="imgs/bnr-super-modelroom.jpg" class="campaignCard__image" alt="">
-                                </a>
-                            </div>
-                            <div class="campaignCard">
-                                <a href="javascript:void(0);" class="campaignCard__link js-campaign-menu">
-                                    <img src="imgs/bnr-campaign.png" class="campaignCard__image" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contentArea">
-                    実装時こちらのダミーエリアは削除してください
-                    <div class="dummyArea">
-                        <div class="dummyArea__content">
-                            <div class="dummyArea__heading">以下コンテンツエリア</div>
-                            <p class="dummyArea__explanation">デザイン・レイアウトは自由に設計可</p>
-                        </div>
-                    </div>
-                    / 実装時こちらのダミーエリアは削除してください
-                </div> -->
-                <div class="slider">
+                <div class="slider sai-init sai-animate" data-sai="fade-in">
                     <div class="slider-pc only-pc">
-                        <img src="/imgs/img-slider.jpg" alt="Slider PC">
+                        <img src="imgs/img-slider.jpg" alt="Slider PC">
                     </div>
                     <div class="slider-sp only-sp">
-                        <img src="/imgs/img-slider_sp.jpg" alt="Slider SP">
+                        <img src="imgs/img-slider_sp.jpg" alt="Slider SP">
                     </div>
                     <div class="slider__title">
                         <p>外観完成予想CG</p>
@@ -756,15 +458,15 @@
                 </div>
                 <div class="intro">
                     <div class="intro__box">
-                        <div class="intro__img">
+                        <div class="intro__img" data-sai="fade-in" data-sai-delay="300">
                             <img src="imgs/img-intro.png" alt="Image Intro">
                         </div>
-                        <div class="intro__desc">
-                            <p class="text__Flip--center">第一種中高層住居専用見晴らす丘 <br class="only-sp"> そのポジションを最大限に活かす未来す駅前再開
+                        <div class="intro__desc inView fade-up">
+                            <p class="text__Flip--center sai-init sai-animate" data-sai="fade-up">第一種中高層住居専用見晴らす丘 <br class="only-sp"> そのポジションを最大限に活かす未来す駅前再開
                             </p>
-                            <p class="text__Flip--center">発計画が進む、成熟した時が流れる多様な</p>
+                            <p class="text__Flip--center sai-init sai-animate" data-sai="fade-up">発計画が進む、成熟した時が流れる多様な</p>
                         </div>
-                        <div class="intro__title">
+                        <div class="intro__title inView fade-up">
                             <p>あらたな暮らしは、駅前で結実する。</p>
                         </div>
                     </div>
@@ -774,7 +476,7 @@
                     <div class="position">
                         <div class="box__wrapper">
                             <div class="box__container">
-                                <p class="box__title">
+                                <p class="box__title inView fade-in">
                                     急行停車駅徒歩 <span class="box__title--number">2</span> 分、
                                     <br>
                                     ひばりが丘の中心で、
@@ -784,17 +486,16 @@
                                 <div class="box__show">
                                     <h3 class="box__content__heading box__content__heading--sp">Position</h3>
 
-                                    <div class="box__img">
+                                    <div class="box__img inView roll-left">
                                         <div class="img-title only-pc">
                                             <img src="imgs/position.jpg" alt="Position">
-                                            <a href="#">○〇〇○〇〇○〇〇○〇〇</a>
+                                            <p class="photo__capIn">○〇〇○〇〇○〇〇○〇〇</p>
                                         </div>
                                         <div class="img-title only-sp">
                                             <img src="imgs/position-main_sp.jpg" alt="Position">
-                                            <!-- <a href="#">○〇〇○〇〇○〇〇○〇〇</a> -->
                                         </div>
                                     </div>
-                                    <div class="box__content box__content--position">
+                                    <div class="box__content box__content--position inView fade-up">
                                         <h3 class="box__content__heading box__content__heading--pc">Position</h3>
                                         <h4 class="box__content__subtitle">
                                             急行停車駅徒歩 2 分の価値
@@ -809,7 +510,7 @@
                                 </div>
                                 <div class="box__hide box__hide--position" id="box-hide">
                                     <div class="position__boxhide">
-                                        <div class="position__boxhide__left">
+                                        <div class="position__boxhide__left inView fade-left">
                                             <div class="position__boxhide__img">
                                                 <img src="imgs/img-position01.png" alt="Position Image">
                                                 <a href="#" class="position__boxhide__imgtitle">
@@ -817,7 +518,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="position__boxhide__right">
+                                        <div class="position__boxhide__right inView fade-right">
                                             <p class="text__Flip--right">第一種中高層住居専用地域を見晴らす <br> 丘活かす見晴平方面の下面の下り坂ルー
                                             </p>
                                             <div class="position__btn--big">
@@ -867,7 +568,7 @@
                     <div class="design">
                         <div class="box__wrapper">
                             <div class="box__container">
-                                <p class="box__title">
+                                <p class="box__title inView fade-in">
                                     都市の洗練と
                                     <br>
                                     街に馴染む温もり。
@@ -875,7 +576,7 @@
                                     象徴の建築美を<span class="box__title--txt">結</span>ぶ。
                                 </p>
                                 <div class="box__show">
-                                    <div class="box__content box__content--design">
+                                    <div class="box__content box__content--design inView fade-left">
                                         <h3 class="box__content__heading box__content__heading--pc">Design</h3>
                                         <h4 class="box__content__subtitle">
                                             誇らしさを抱く独創的な建築
@@ -887,14 +588,14 @@
                                             第一種中高層住居専用地域を見晴らす丘。そのポジションを最大限に活かす見晴平方面の下り坂ルー第一種中高層住居専用ジションを最大限に活かす見晴平方面の下り坂ルー
                                         </p>
                                     </div>
-                                    <div class="box__img">
+                                    <div class="box__img inView roll-right">
                                         <div class="img-title only-pc">
                                             <img src="./imgs/design-main.jpg" alt="Design Image">
-                                            <a href="#">○〇〇○〇〇○〇〇○〇〇</a>
+                                            <p class="photo__capIn">○〇〇○〇〇○〇〇○〇〇</p>
                                         </div>
                                         <div class="img-title only-sp">
                                             <img src="./imgs/design-main_sp.jpg" alt="Design Image">
-                                            <a href="#">○〇〇○〇〇○〇〇○〇〇</a>
+                                            <p class="photo__capIn">○〇〇○〇〇○〇〇○〇〇</p>
                                         </div>
                                     </div>
                                     <h3 class="box__content__heading box__content__heading--sp">Design</h3>
@@ -902,27 +603,27 @@
                                 <div class="box__hide box__hide--design">
                                     <div class="design__boxhide">
 
-                                        <div class="design__boxhide__left">
-                                            <div class="design__boxhide__leftimg">
+                                        <div class="design__boxhide__left inView fade-left">
+                                            <div class="design__boxhide__leftimg ">
                                                 <div class="img-title">
                                                     <img src="imgs/design-img01.jpg" alt="Design Image 01">
-                                                    <a>○〇〇○〇〇○〇〇○〇〇</a>
+                                                    <p class="photo__capIn">○〇〇○〇〇○〇〇○〇〇</p>
                                                 </div>
                                                 <p class="text__Flip--right design__boxhide__lefttitle">第一種中高層住居専用地域を見晴らす丘活かす見晴平方面の下面の下り坂ルー</p>
                                             </div>
 
                                         </div>
-                                        <div class="design__boxhide__right">
+                                        <div class="design__boxhide__right inView fade-right">
                                             <div class="design__boxhide__right-top">
                                                 <p class="text__Flip--right">第一種中高層住居専用地域を見晴らす丘活かす見晴平方面の下面の下り坂ルー</p>
                                                 <div class="design__boxhide__rightimg">
                                                     <div class="img-title only-pc">
                                                         <img src="imgs/img-design02.png" alt="Design Image 02">
-                                                        <a>マテリアルイメージ</a>
+                                                        <p class="photo__capIn">マテリアルイメージ</p>
                                                     </div>
                                                     <div class="img-title only-sp">
                                                         <img src="imgs/img-design02-sp.png" alt="Design Image 02">
-                                                        <a>マテリアルイメージ</a>
+                                                        <p class="photo__capIn">マテリアルイメージ</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -964,30 +665,27 @@
                     <div class="plan">
                         <div class="box__wrapper">
                             <div class="box__container">
-                                <p class="box__title">
+                                <p class="box__title inView fade-in">
                                     都市の洗練と
                                     <br>
                                     街に馴染む温もり。
                                     <br>
                                     象徴の建築美を<span class="box__title--txt">結</span>ぶ。
-                                    <!-- 日常を軽快に愉しみ
-                                    穏やかに寛ぐ、
-                                    多彩な暮らしを結ぶ。 -->
                                 </p>
                                 <div class="box__show">
                                     <h3 class="box__content__heading box__content__heading--sp">Plan</h3>
 
-                                    <div class="box__img">
+                                    <div class="box__img inView roll-left">
                                         <div class="img-title only-pc">
                                             <img src="imgs/plan-main.jpg" alt="Plan Image">
-                                            <a href="">image</a>
+                                            <p class="photo__capIn" href="">image</p>
                                         </div>
                                         <div class="img-title only-sp">
                                             <img src="imgs/plan-main_sp.jpg" alt="Plan Image">
-                                            <a href="">image</a>
+                                            <p class="photo__capIn" href="">image</p>
                                         </div>
                                     </div>
-                                    <div class="box__content box__content--plan">
+                                    <div class="box__content box__content--plan inView fade-left">
                                         <h3 class="box__content__heading box__content__heading--pc">Plan</h3>
                                         <h4 class="box__content__subtitle">
                                             駅前に住むからこその暮らし方
@@ -1002,7 +700,7 @@
                                 </div>
                                 <div class="box__hide box__hide--plan">
                                     <div class="plan__boxhide">
-                                        <div class="plan__boxhide__list">
+                                        <div class="plan__boxhide__list inView fade-left">
                                             <div class="plan__boxhide__item">
                                                 <img src="imgs/plan-img01.jpg" alt="Plan Image 01">
                                             </div>
@@ -1016,8 +714,8 @@
                                                 <img src="imgs/plan-img03.jpg" alt="Plan Image 03">
                                             </div>
                                         </div>
-                                        <p class="plan__boxhide__title text__Flip--right">第一種中高層住居専用地域を見晴らす丘活かす見晴平方面の<br class="only-pc">下面の下り坂ルー</p>
-                                        <div class="plan__btn--big">
+                                        <p class="plan__boxhide__title text__Flip--right inView fade-in">第一種中高層住居専用地域を見晴らす丘活かす見晴平方面の<br class="only-pc">下面の下り坂ルー</p>
+                                        <div class="plan__btn--big inView fade-right">
                                             <div class="box__btn box__btn--bigblack">
                                                 <div class="box__btnleft">
                                                     <p>Plan</p>
@@ -1039,7 +737,7 @@
                     </div>
                 </div>
 
-                <div class="video">
+                <div class="video inView fade-in">
                     <a href="#">
                         <img src="imgs/video.jpg" alt="Video">
                     </a>
@@ -1052,15 +750,7 @@
                     <h2 class="info__heading">
                         エントリー受付開始
                     </h2>
-                    <div class="info__list">
-                        <div class="info__item">
-                            <p class="info__day">
-                                2023.00.00
-                            </p>
-                            <a href="#" class="info__content">
-                                物件エントリー受付開始しました。物件エントリー受付開始しました。物件エントリー受付開始しました。物件エントリー受付開始しました。
-                            </a>
-                        </div>
+                    <div class="info__list inView fade-in">
                         <div class="info__item">
                             <p class="info__day">
                                 2023.00.00
@@ -1080,7 +770,7 @@
                     </div>
                 </div>
 
-                <div class="menubottom">
+                <div class="menubottom inView fade-in">
                     <div class="menubottom__list">
                         <a href="#" class="menubottom__item scale-img">
                             <img src="imgs/menubottom-position.jpg" alt="Position">

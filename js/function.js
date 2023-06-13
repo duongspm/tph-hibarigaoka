@@ -81,7 +81,7 @@ $(function(){
                 breakpoint: 768,
                 settings: {
                     autoplay: true,
-                    autoplaySpeed: 5000,
+                    autoplaySpeed: 2000,
                     speed: 1000,
                     slidesToShow: 2,
                     // variableWidth: true,

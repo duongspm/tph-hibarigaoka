@@ -42,7 +42,7 @@
 html {
   cursor: default;
   /* 1 */
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Noto+Sans+JP", sans-serif;
   /* 2 */
   line-height: 1.15;
   /* 3 */
@@ -687,7 +687,7 @@ img {
 .caption,
 .capIn,
 .capOut {
-  color: #666666;
+  color: #000000;
   font-size: 10px;
   line-height: 1.8;
 }
@@ -701,7 +701,7 @@ img {
 .caption[data-color='black'],
 .capIn[data-color='black'],
 .capOut[data-color='black'] {
-  color: #000000;
+  color: #ffffff;
 }
 
 .caption[data-color='sdw-wh'],
@@ -729,6 +729,8 @@ img {
 .photo__capIn {
   bottom: 5px;
   right: 5px;
+  font-size: 10px;
+  color: #ffffff;
 }
 
 .photo__capOut {
@@ -2363,6 +2365,33 @@ body[data-sai-easing='ease-in-out-quart'] [data-sai] {
 [data-sai='flip-down'].sai-animate {
   -webkit-transform: perspective(2500px) rotateX(0);
           transform: perspective(2500px) rotateX(0);
+}
+
+[data-sai^='target'][data-sai^='target'] {
+  opacity: 1;
+}
+[data-sai='roll-up'] {
+  position: relative;
+  overflow: hidden;
+}
+
+[data-sai='roll-up']:after{
+  content: ''; 
+  display: block; 
+  width: 101%; 
+  height: 133.3333%; 
+  background: #f0f0e8; 
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  z-index: 2; 
+  background: linear-gradient(0deg,hsla(0,0%,100%,0),#f0f0e8 25%,#f0f0e8); 
+  transition: transform 1.5s ease .5s;
+}
+
+[data-sai='roll-up'].sai-animate:after{
+  transform: translateY(-100%); 
+  -webkit-transform: translateY(-100%);
 }
 
 [data-sai^='target'][data-sai^='target'] {
@@ -6872,4 +6901,83 @@ body[data-sai-easing='ease-in-out-quart'] [data-sai] {
   .contentMenu-dropdown__link{
     line-height: 1.25;
   }
+}
+/* / Animate / */
+.fade-in{opacity: 0; filter: blur(5px) brightness(105%); transition: opacity 2s ease, filter 2s ease;}
+.fade-in.is-view{opacity: 1; filter: blur(0) brightness(100%);}
+
+.fade-up{opacity: 0; transform: translateY(40px); -webkit-transform: translateY(40px); filter: blur(5px) brightness(105%); transition: opacity 1.5s ease, transform 1.5s ease, filter 1.5s ease;}
+.fade-up.is-view{opacity: 1; transform: translateY(0); -webkit-transform: translateY(0); filter: blur(0) brightness(100%);}
+
+.fade-down{opacity: 0; transform: translateY(-40px); -webkit-transform: translateY(-40px); filter: blur(5px) brightness(105%); transition: opacity 1.5s ease, transform 1.5s ease, filter 1.5s ease;}
+.fade-down.is-view{opacity: 1; transform: translateY(0); -webkit-transform: translateY(0); filter: blur(0) brightness(100%);}
+
+.fade-left{opacity: 0; transform: translateX(-40px); -webkit-transform: translateX(-40px); filter: blur(5px) brightness(105%); transition: opacity 1.5s ease, transform 1.5s ease, filter 1.5s ease;}
+.fade-left.is-view{opacity: 1; transform: translateY(0); -webkit-transform: translateY(0); filter: blur(0) brightness(100%);}
+
+.fade-right{opacity: 0; transform: translateX(40px); -webkit-transform: translateX(40px); filter: blur(5px) brightness(105%); transition: opacity 1.5s ease, transform 1.5s ease, filter 1.5s ease;}
+.fade-right.is-view{opacity: 1; transform: translateY(0); -webkit-transform: translateY(0); filter: blur(0) brightness(100%);}
+
+.zoom-in{opacity: 0; overflow: hidden; transform: scale(0.7,0.7); -webkit-transform: scale(0.7,0.7); transition: opacity 1.5s ease, transform 1.5s ease;}
+.zoom-in.is-view{opacity: 1; transform: scale(1,1); -webkit-transform: scale(1,1);}
+
+.zoom-out{opacity: 0; overflow: hidden; transform: scale(1.2,1.2); -webkit-transform: scale(1.2,1.2); transition: opacity 1.5s ease, transform 1.5s ease;}
+.zoom-out.is-view{opacity: 1; transform: scale(1,1); -webkit-transform: scale(1,1);}
+
+.roll-left{position: relative; overflow: hidden;}
+.roll-left img{opacity: 0; transition: opacity 1.5s ease .5s;}
+.roll-left:after{content: ''; position: absolute; top: 0; bottom: 0; background: #f1f0e8;}
+.roll-left.is-view img{opacity: 1;}
+.roll-left.is-view:after{animation: rollLeft 1.5s ease;}
+
+@keyframes rollLeft{
+    0%{left: 0; right: 100%;}
+    50%{left: 0; right: 0;}
+    100%{left: 100%; right: 0;}
+}
+@-webkit-keyframes rollLeft{
+    0%{left: 0; right: 100%;}
+    50%{left: 0; right: 0;}
+    100%{left: 100%; right: 0;}
+}
+
+.roll-right{position: relative; overflow: hidden;}
+.roll-right img{opacity: 0; transition: opacity 1.5s ease .5s;}
+.roll-right:after{content: ''; position: absolute; top: 0; bottom: 0; background: #f1f0e8;}
+.roll-right.is-view img{opacity: 1;}
+.roll-right.is-view:after{animation: rollRight 1.5s ease;}
+
+@keyframes rollRight{
+    0%{right: 0; left: 100%;}
+    50%{right: 0; left: 0;}
+    100%{right: 100%; left: 0;}
+}
+@-webkit-keyframes rollRight{
+    0%{right: 0; left: 100%;}
+    50%{right: 0; left: 0;}
+    100%{right: 100%; left: 0;}
+}
+
+@keyframes rolltop{
+  0%{top: 0; bottom: 100%;}
+  50%{top: 0; bottom: 0;}
+  100%{top: 100%; bottom: 0;}
+}
+@-webkit-keyframes rolltop{
+  0%{top: 0; bottom: 100%;}
+  50%{top: 0; bottom: 0;}
+  100%{top: 100%; bottom: 0;}
+}
+.roll-top{position: relative; overflow: hidden;}
+.roll-top img{opacity: 0; transition: opacity 1.5s ease .5s;}
+.roll-top:after{content: ''; position: absolute; top: 0; bottom: 0; background: #f1f0e8;}
+.roll-top.is-view img{opacity: 1;}
+.roll-top.is-view:after{animation: rolltop 1.5s ease;}
+
+
+@media (min-width: 768px){
+    .delay1{transition-delay: .4s;}
+    .delay2{transition-delay: .6s;}
+    .delay3{transition-delay: .8s;}
+
 }
