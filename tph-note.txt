@@ -39,3 +39,16 @@ test pc, 1064
 blockOuter = box__container
 blockHead = box__show
 blockHide = box__hide
+
+mã màu 6 số
+ the a -> p photocapIn
+	hieu ung box__btn
+capOut ̉̉̉̉666666
+
+gsap
+
+datasai - la animation
+
+datasai 600 -> 1000 de mượt hơn; delay 100 (js/lib.js) 
+
+hover - menubottom

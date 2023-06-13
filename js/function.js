@@ -71,3 +71,28 @@ $(document).ready(function (){
 //         BoxHide.classList.add('show-menu')
 //     })
 // }
+$(function(){
+    $('.info__list').slick({
+         responsive: [
+            {
+                breakpoint: 5000,
+                settings: "unslick"
+            },{
+                breakpoint: 768,
+                settings: {
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                    speed: 1000,
+                    slidesToShow: 2,
+                    // variableWidth: true,
+                    arrows: false,
+                    dots: false,
+                    centerMode: true,
+                 }
+            }
+        ]
+    });
+}); 
+// infinite: true,
+// speed: 300,
+// variableWidth: true

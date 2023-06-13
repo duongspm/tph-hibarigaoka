@@ -36,10 +36,12 @@
     
     <!-- assets -->
     <link rel="stylesheet" href="common/css/common.css" />
+    <link rel="stylesheet" href="common/css/slick.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="common/js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="common/js/lib.js"></script>
+    <script src="common/js/slick.js"></script>
     <script src="js/function.js"></script>
+    <script src="common/js/lib.js"></script>
 
 
 </head>
@@ -742,10 +744,10 @@
                     / 実装時こちらのダミーエリアは削除してください
                 </div> -->
                 <div class="slider">
-                    <div class="slider-pc">
+                    <div class="slider-pc only-pc">
                         <img src="/imgs/img-slider.jpg" alt="Slider PC">
                     </div>
-                    <div class="slider-sp">
+                    <div class="slider-sp only-sp">
                         <img src="/imgs/img-slider_sp.jpg" alt="Slider SP">
                     </div>
                     <div class="slider__title">
@@ -758,7 +760,7 @@
                             <img src="imgs/img-intro.png" alt="Image Intro">
                         </div>
                         <div class="intro__desc">
-                            <p class="text__Flip--center">第一種中高層住居専用見晴らす丘そのポジションを最大限に活かす未来す駅前再開
+                            <p class="text__Flip--center">第一種中高層住居専用見晴らす丘 <br class="only-sp"> そのポジションを最大限に活かす未来す駅前再開
                             </p>
                             <p class="text__Flip--center">発計画が進む、成熟した時が流れる多様な</p>
                         </div>
@@ -780,16 +782,22 @@
                                     多彩な価値を <span class="box__title--txt"> 結</span>ぶ。
                                 </p>
                                 <div class="box__show">
+                                    <h3 class="box__content__heading box__content__heading--sp">Position</h3>
+
                                     <div class="box__img">
-                                        <div class="img-title">
+                                        <div class="img-title only-pc">
                                             <img src="imgs/position.jpg" alt="Position">
                                             <a href="#">○〇〇○〇〇○〇〇○〇〇</a>
                                         </div>
+                                        <div class="img-title only-sp">
+                                            <img src="imgs/position-main_sp.jpg" alt="Position">
+                                            <!-- <a href="#">○〇〇○〇〇○〇〇○〇〇</a> -->
+                                        </div>
                                     </div>
                                     <div class="box__content box__content--position">
-                                        <h3 class="box__content__heading">Position</h3>
+                                        <h3 class="box__content__heading box__content__heading--pc">Position</h3>
                                         <h4 class="box__content__subtitle">
-                                            急行停車駅徒歩2分の価値
+                                            急行停車駅徒歩 2 分の価値
                                         </h4>
                                         <p class="box__content__title">
                                             都市機能が集積する、駅前ロータリー目の前。
@@ -867,8 +875,8 @@
                                     象徴の建築美を<span class="box__title--txt">結</span>ぶ。
                                 </p>
                                 <div class="box__show">
-                                    <div class="box__content">
-                                        <h3 class="box__content__heading">Design</h3>
+                                    <div class="box__content box__content--design">
+                                        <h3 class="box__content__heading box__content__heading--pc">Design</h3>
                                         <h4 class="box__content__subtitle">
                                             誇らしさを抱く独創的な建築
                                         </h4>
@@ -880,14 +888,20 @@
                                         </p>
                                     </div>
                                     <div class="box__img">
-                                        <div class="img-title">
+                                        <div class="img-title only-pc">
                                             <img src="./imgs/design-main.jpg" alt="Design Image">
                                             <a href="#">○〇〇○〇〇○〇〇○〇〇</a>
                                         </div>
+                                        <div class="img-title only-sp">
+                                            <img src="./imgs/design-main_sp.jpg" alt="Design Image">
+                                            <a href="#">○〇〇○〇〇○〇〇○〇〇</a>
+                                        </div>
                                     </div>
+                                    <h3 class="box__content__heading box__content__heading--sp">Design</h3>
                                 </div>
                                 <div class="box__hide box__hide--design">
                                     <div class="design__boxhide">
+
                                         <div class="design__boxhide__left">
                                             <div class="design__boxhide__leftimg">
                                                 <div class="img-title">
@@ -902,8 +916,12 @@
                                             <div class="design__boxhide__right-top">
                                                 <p class="text__Flip--right">第一種中高層住居専用地域を見晴らす丘活かす見晴平方面の下面の下り坂ルー</p>
                                                 <div class="design__boxhide__rightimg">
-                                                    <div class="img-title">
+                                                    <div class="img-title only-pc">
                                                         <img src="imgs/img-design02.png" alt="Design Image 02">
+                                                        <a>マテリアルイメージ</a>
+                                                    </div>
+                                                    <div class="img-title only-sp">
+                                                        <img src="imgs/img-design02-sp.png" alt="Design Image 02">
                                                         <a>マテリアルイメージ</a>
                                                     </div>
                                                 </div>
@@ -957,14 +975,20 @@
                                     多彩な暮らしを結ぶ。 -->
                                 </p>
                                 <div class="box__show">
+                                    <h3 class="box__content__heading box__content__heading--sp">Plan</h3>
+
                                     <div class="box__img">
-                                        <div class="img-title">
+                                        <div class="img-title only-pc">
                                             <img src="imgs/plan-main.jpg" alt="Plan Image">
+                                            <a href="">image</a>
+                                        </div>
+                                        <div class="img-title only-sp">
+                                            <img src="imgs/plan-main_sp.jpg" alt="Plan Image">
                                             <a href="">image</a>
                                         </div>
                                     </div>
                                     <div class="box__content box__content--plan">
-                                        <h3 class="box__content__heading">Plan</h3>
+                                        <h3 class="box__content__heading box__content__heading--pc">Plan</h3>
                                         <h4 class="box__content__subtitle">
                                             駅前に住むからこその暮らし方
                                         </h4>
@@ -982,8 +1006,11 @@
                                             <div class="plan__boxhide__item">
                                                 <img src="imgs/plan-img01.jpg" alt="Plan Image 01">
                                             </div>
-                                            <div class="plan__boxhide__item">
+                                            <div class="plan__boxhide__item only-pc">
                                                 <img src="imgs/plan-img02.jpg" alt="Plan Image 02">
+                                            </div>
+                                            <div class="plan__boxhide__item only-sp">
+                                                <img src="imgs/plan-img02-sp.png" alt="Plan Image 02">
                                             </div>
                                             <div class="plan__boxhide__item">
                                                 <img src="imgs/plan-img03.jpg" alt="Plan Image 03">
@@ -1026,6 +1053,14 @@
                         エントリー受付開始
                     </h2>
                     <div class="info__list">
+                        <div class="info__item">
+                            <p class="info__day">
+                                2023.00.00
+                            </p>
+                            <a href="#" class="info__content">
+                                物件エントリー受付開始しました。物件エントリー受付開始しました。物件エントリー受付開始しました。物件エントリー受付開始しました。
+                            </a>
+                        </div>
                         <div class="info__item">
                             <p class="info__day">
                                 2023.00.00
