@@ -21,15 +21,15 @@ $(document).ready(function (){
 
 });
 $(document).ready(function (){
-    $open=false;
+    $openD=false;
 	function boxHideDesign() {
-		if($open==false){
-			$open=true;
+		if($openD==false){
+			$openD=true;
             $('.box__content--design').addClass('is-close');
             $('.box__hide--design').addClass('active');
             $(".box__more--design").addClass('is-close');
 		}else{
-			$open=false;
+			$openD=false;
             $('.box__content--design').removeClass('is-close');
             $('.box__hide--design').removeClass('active');
             $(".box__more--design").removeClass('is-close');
@@ -42,15 +42,15 @@ $(document).ready(function (){
 });
 
 $(document).ready(function (){
-    $open=false;
+    $openP=false;
 	function boxHideplan() {
-		if($open==false){
-			$open=true;
+		if($openP==false){
+			$openP=true;
             $('.box__content--plan').addClass('is-close');
             $('.box__hide--plan').addClass('active');
             $(".box__more--plan").addClass('is-close');
 		}else{
-			$open=false;
+			$openP=false;
             $('.box__content--plan').removeClass('is-close');
             $('.box__hide--plan').removeClass('active');
             $(".box__more--plan").removeClass('is-close');
@@ -61,16 +61,7 @@ $(document).ready(function (){
 		boxHideplan();
 	});
 });
-/*=============== SHOW ===============*/
-// const BoxHide = document.getElementById('box-hide'),
-// BoxMore = document.getElementById('box-more')
 
-
-// if(BoxMore){
-//     BoxMore.addEventListener('click',()=>{
-//         BoxHide.classList.add('show-menu')
-//     })
-// }
 $(function(){
     $('.info__list').slick({
          responsive: [
@@ -83,16 +74,12 @@ $(function(){
                     autoplay: true,
                     autoplaySpeed: 2000,
                     speed: 1000,
-                    slidesToShow: 2,
-                    // variableWidth: true,
+                    loop: true,
+                    variableWidth: true,
                     arrows: false,
                     dots: false,
-                    centerMode: true,
                  }
             }
         ]
     });
 }); 
-// infinite: true,
-// speed: 300,
-// variableWidth: true
