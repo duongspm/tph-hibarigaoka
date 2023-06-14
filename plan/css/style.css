@@ -28,6 +28,7 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
 .scene__img{
     position: relative;
     background: #000;
@@ -244,10 +245,10 @@
         width: 16%;
         padding-top: 0;
     }
-    .scene__middle--1{
+    /* .scene__middle--1{
         padding-top: 0 !important;
         left: 90%;
-    }
+    } */
     .scene__img--left{
         width: 84%;
     }
@@ -259,11 +260,14 @@
     .scene__content{
         font-size: 15px;
     }
-    .scene__middle:first-child{
-        background-color: red;
-        font-size: 50px;
-    }
     .p-top{
         padding-top: 80px;
+    }
+    /* xoa */
+    .scene__item:nth-child(1) .scene__middle{
+        /* background-color: red; */
+        padding-top: 0 !important;
+        width: 20%;
+        left: 80%;
     }
 }
